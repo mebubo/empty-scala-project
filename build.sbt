@@ -1,4 +1,4 @@
-scalaVersion := "2.12.10"
+scalaVersion := "2.13.6"
 scalacOptions ++= Seq(
   "-language:higherKinds"
 )
