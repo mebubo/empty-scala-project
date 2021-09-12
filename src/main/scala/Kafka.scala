@@ -2,7 +2,7 @@ import cats.effect.{ExitCode, IO, IOApp}
 import fs2.kafka._
 import scala.concurrent.duration._
 
-object K extends IOApp {
+object Kafka extends IOApp {
   override def run(args: List[String]): IO[ExitCode] = {
     def processRecord(record: ConsumerRecord[String, String]): IO[(String, String)] =
       IO.pure(record.key -> record.value)
